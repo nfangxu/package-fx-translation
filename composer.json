@@ -1,0 +1,29 @@
+{
+    "name": "fx/translation",
+    "description": "translation",
+    "authors": [
+        {
+            "name": "nfangxu",
+            "email": "nfangxu@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "stichoza/google-translate-php": "^4.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fx\\Translation\\Providers\\FxTranslationServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Fx\\Translation\\": "src/"
+        }
+    }
+}
